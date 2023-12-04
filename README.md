@@ -60,7 +60,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   
   This code was last run without errors with the following library versions:
 
-  * [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
+* [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
 
   - Input:
     
@@ -70,7 +70,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
-  * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
+* [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
 
   - Input:
     
@@ -84,10 +84,10 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
 When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
 * [Extract AA Positions And Labels](/Analysis/Extract_AA_Positions_And_Labels/)
-  The first step in analyzing our simulation results will be to extract the position and label of every amino acid (AA) from the simulation at every time step interval. The Hoomd-Blue toolkit reports the position of each amino acid in a .gsd file, which we would like to repurpose into a numpy .npy array.
+  The first step in analyzing our simulation results will be to extract the position and label of every amino acid (AA) from the simulation at every time step interval. The Hoomd-Blue toolkit reports the position and paerticle label of each amino acid in a .gsd file, which we would like to repurpose into a numpy .npy array files, one for the positions of each amino acid, and one for the particle labels of each amino acid.
 
   - Input:
-    A .gsd file, containing the positions of each AA at all extracted timesteps of the simulation, as well as a .csv file containing the amino-acid order for constructing the protein.
+    A .gsd file, containing the positions and particle labels of each AA at all extracted timesteps of the simulation, as well as a .csv file containing the amino-acid order for constructing the protein.
 
   - Output:
     Two .npy files, one containing the positions of each AA at all extracted timesteps of the simulation, and another containing labels of each AA in the simulation box at all extracted timesteps.
