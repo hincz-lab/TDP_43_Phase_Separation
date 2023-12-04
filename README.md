@@ -60,7 +60,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   
   This code was last run without errors with the following library versions:
 
-  * [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
+* [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
 
   - Input:
     
@@ -70,7 +70,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
-  * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
+* [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
 
   - Input:
     
