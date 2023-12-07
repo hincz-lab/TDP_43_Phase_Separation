@@ -145,7 +145,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Output:
     A .avi video file, which is the exact same content as the input .gif, but which can now be panned through.
 
-* [Extract AA Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
+* [Extract AA TA_Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
   To complete our force analysis, we need to calculate the time averaged (TA) pairwise force (Electrostatic & Hydrophobic) for all pairs of AAs in the simulation box.
 
   - Input:
