@@ -137,7 +137,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
 
 
-* [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_GIF_To_Video/)
+* [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
   The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
 
   - Input:
@@ -145,13 +145,15 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Output:
     A .avi video file, which is the exact same content as the input .gif, but which can now be panned through.
 
-* [Extract AA Pairwise Forces](/Analysis/Extract_AA_Pairwise_Forces/)
+* [Extract AA Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
+  To complete our force analysis, we need to calculate the time averaged (TA) pairwise force (Electrostatic & Hydrophobic) for all pairs of AAs in the simulation box.
 
   - Input:
+    The input for this code are two .npy files and one .csv file. One of the .npy files contains the positions of each AA in the simulation box for all timesteps, whereas the second .npy file contains the AA labels for each of the particles in the simulation box for all timesteps. Finally, the .csv file contains the coarse grained properties of each AA type.
     
 
   - Output:
-    
+    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise soft-interaction forces.
 
   This code was last run without errors with the following library versions:
 
