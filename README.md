@@ -122,7 +122,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
 
 
-* [Create Trajectory GIF](/Analysis/Create_Trajectory_Gifs/)
+* [Create Trajectory Gifs](/Analysis/Create_Trajectory_Gifs/)
   Once we have extracted all of the amino acid positions, we can then visualize how the system behaves over time. In this step, we convert all of the AA position data into a .gif. The .gif file shows the projection of each amino acid along one face of the simulation slab for each time step.
 
   - Input:
@@ -137,7 +137,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
 
 
-* [Convert Trajectory GIF To Video](/Analysis/Convert_Trajectory_GIF_To_Video/)
+* [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_GIF_To_Video/)
   The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
 
 
