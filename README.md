@@ -157,7 +157,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* [Calculate Sum Of Forces](/Analysis/Calculate_Sum_Of_Forces/)
+* [Calculate Sum Of Forces](/Analysis/Calculate_Force_Sums/)
 
   - Input:
     
