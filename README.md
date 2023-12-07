@@ -168,7 +168,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* [Calculate Residue Residue Forces](/Analysis/Calculate_Residue_Forces/)
+* [Calculate Residue Forces](/Analysis/Calculate_Residue_Forces/)
 
   - Input:
     
