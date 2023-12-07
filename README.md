@@ -153,7 +153,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
     
 
   - Output:
-    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise soft-interaction forces.
+    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
