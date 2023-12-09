@@ -145,7 +145,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Output:
     A .avi video file, which is the exact same content as the input .gif, but which can now be panned through.
 
-* [Extract AA Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
+* [Extract AA TA_Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
   To complete our force analysis, we need to calculate the time averaged (TA) pairwise force (Electrostatic & Hydrophobic) for all pairs of AAs in the simulation box.
 
   - Input:
@@ -153,11 +153,22 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
     
 
   - Output:
-    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise soft-interaction forces.
+    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
-* [Calculate Sum Of Forces](/Analysis/Calculate_Sum_Of_Forces/)
+* [Calculate Force_Sums](/Analysis/Calculate_Force_Sums/)
+  Once we have extracted the TA electrostatic and hydrophobic forces, we now want to compare the relative magnitude of the sum of the electrostatic and hydrophobic forces. To calculate this quantity with an errorbar, we will use a block-bootstrapping procedure. These forces will allow us to comment on the relative importance of both forces in sustaining phase separation.
+  - Input:
+    The inputs for this code are two .npy files. One .npy file contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
+    
+
+  - Output:
+    The outputs for this code are four .npy files. For both electrostatic forces and hydrophobic forces, the mean and standard deviation of the force sums are reported.
+
+  This code was last run without errors with the following library versions:
+
+* [Calculate Residue Forces](/Analysis/Calculate_Residue_Forces/)
 
   - Input:
     
@@ -167,7 +178,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* [Calculate Residue Residue Forces](/Analysis/Calculate_Residue_Residue_Forces/)
+* [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
 
   - Input:
     
@@ -177,17 +188,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* [Plot Sum Of Forces](/Analysis/Plot_Sum_Of_Forces/)
-
-  - Input:
-    
-
-  - Output:
-    
-
-  This code was last run without errors with the following library versions:
-
-* [Plot Residue Residue Forces](/Analysis/Plot_Residue_Residue_Forces/)
+* [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
 
   - Input:
     
