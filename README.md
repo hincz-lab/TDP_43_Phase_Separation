@@ -169,12 +169,12 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   This code was last run without errors with the following library versions:
 
 * [Calculate Residue Forces](/Analysis/Calculate_Residue_Forces/)
-
+  We can get a finer level of detail as far as how the TA inter-protein forces are distributed by disjointing the total force sums into components based upon locations of two interacting AAs in their respective proteins.
   - Input:
-    
+    The inputs for this code are two .npy files, one containing the TA electrostatic forces, and one containing the TA hydrophobic forces.
 
   - Output:
-    
+    The outputs of this code are two .npy files. One .npy file contains the residue-residue TA electrostatic forces, whereas the second contains the residue-residue TA hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
