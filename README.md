@@ -62,13 +62,14 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   
   This code was last run without errors with the following library versions:
 
-  Python 3.9.6
-  GCC 11.2.0
-  Pandas 1.3.4
-  Numpy 1.21.3
-  Hoomd-Blue 2.9.7
-  Azplugins 0.12.0
-  GSD 2.7.0
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
 
 * [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants with 5x the number of proteins used in the paper main-text results. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that our choice of using an intentionally small number of proteins was justifiable, insofar as using a larger number of proteins would not qualitatively change the results of the simulations.
@@ -94,13 +95,14 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
-  Python 3.9.6
-  GCC 11.2.0
-  Pandas 1.3.4
-  Numpy 1.21.3
-  Hoomd-Blue 2.9.7
-  Azplugins 0.12.0
-  GSD 2.7.0
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
 
 * [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
 
@@ -112,13 +114,14 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
-  Python 3.9.6
-  GCC 11.2.0
-  Pandas 1.3.4
-  Numpy 1.21.3
-  Hoomd-Blue 2.9.7
-  Azplugins 0.12.0
-  GSD 2.7.0
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
     
 
 * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
@@ -145,13 +148,14 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
-  Python 3.9.6
-  GCC 11.2.0
-  Pandas 1.3.4
-  Numpy 1.21.3
-  Hoomd-Blue 2.9.7
-  Azplugins 0.12.0
-  GSD 2.7.0
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
 
 ## Analysis Code/Data Navigation
 
