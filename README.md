@@ -11,10 +11,15 @@ Hello and welcome to the github repository for the paper [] by Haider, Shipley, 
 
 The aim of this project was to explore the biphasic nature of TDP-43 LCD phosphomimetic variant phase separation diagrams relative to the non-biphasic TDP-43 LCD WT phase separation diagram. To probe the types of interactions that drive this behavior, a coarse grained simulation framework was developed to simulate these TDP-43 systems. These simulations are the concern of this repository, and the code can largely be broken into two chunks. The first set of code/data is classified as [Simulation](/Simulation/), which is concerned with generating, running, and extracting results of simulation. The second set of code/data is classified as [Analysis](/Analysis/), which is concerned with analyzing the results of the simulations. All code for this project was generated in Python using .ipynb Jupyter notebooks. 
 
-The most recent stable versions of libraries/packages which can be used to run all of the following code are:
+The most recent stable versions of libraries/packages which can be used to run [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/), [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/), [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/), and [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/) are:
 
-
-
+- Python 3.9.6
+- GCC 11.2.0
+- Pandas 1.3.4
+- Numpy 1.21.3
+- Hoomd-Blue 2.9.7
+- Azplugins 0.12.0
+- GSD 2.7.0
 
 But stable versions of libraries and packages which can be used to successfully run bits of code will be listed individually for each chunk of code. 
 
@@ -31,7 +36,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
  
   This code was last run without error with the following library versions:
 
-  
+  - Pandas 1.5.3
 
 * [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and it phosphomimimeic variants. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids.
@@ -57,6 +62,15 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
+
 * [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants with 5x the number of proteins used in the paper main-text results. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that our choice of using an intentionally small number of proteins was justifiable, insofar as using a larger number of proteins would not qualitatively change the results of the simulations.
 
@@ -81,6 +95,35 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
+
+* [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
+
+  - Input:
+   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
+
+  - Output:
+    The output is a single .gsd file, containing the position and identifier for each amino acid sitting in the simulation box for all time steps of the input simulation, as well as all additional timesteps completed from the continued simulation.
+
+  This code was last run without errors with the following library versions:
+
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
+    
+
 * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants where the well depth of the Lennard-Jones potential was NOT changed as a function of salt concentration. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that a salt dependant well-depth was necessary to generate phase separation diagrams that qualitatively match experimentally determined phase separation diagrams.
 
@@ -104,6 +147,15 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
     Trajectory - This .gsd file is the production of the protein simulation in the box. This file contains the position and identifier for each amino acid sitting in the box for all time steps of the simulation. 
 
   This code was last run without errors with the following library versions:
+
+  - Python 3.9.6
+  - GCC 11.2.0
+  - Pandas 1.3.4
+  - Numpy 1.21.3
+  - Hoomd-Blue 2.9.7
+  - Azplugins 0.12.0
+  - GSD 2.7.0
+
 
 ## Analysis Code/Data Navigation
 
@@ -133,6 +185,15 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+* [5x Protein Create Trajectory Gifs](/Analysis/5x_Protein_Create_Trajectory_Gifs/)
+  
+  - Input:
+    A .npy file containing the positions of each AA for all extracted timesteps of the simulation.
+
+  - Output:
+    A .gif file, which shows the projection of each AA in the simulation box for all timesteps extracted from the simulation.
+
+  This code was last run without errors with the following library versions:
 
 
 
@@ -181,20 +242,20 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 * [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
 
   - Input:
-    
+    The inputs for this code are four .npy files. Two of the .npy files are the means and standard deviation for electrostatic forces. The other two .npy files are the means and standard deviation for hydrophobic forces.
 
   - Output:
-    
+    The outputs for this code are two .png files and two .svg files. The first .png and .svg files are the sum of the forces plots for the electrostatic forces, whereas the second .png and .svg files are the sum of the forces plots for the hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
 * [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
 
   - Input:
-    
+    The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
 
   - Output:
-    
+    The output for this code are two .png files and two .svg files. One pair of .png and .svg files contain the residue-residue electrostatic forces, whereas the second pair contain the residue-residue hydrophobic forces. 
 
   This code was last run without errors with the following library versions:
 
