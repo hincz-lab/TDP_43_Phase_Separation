@@ -209,10 +209,10 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 * [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
 
   - Input:
-    
+    The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
 
   - Output:
-    
+    The output for this code are two .png files and two .svg files. One pair of .png and .svg files contain the residue-residue electrostatic forces, whereas the second pair contain the residue-residue hydrophobic forces. 
 
   This code was last run without errors with the following library versions:
 
