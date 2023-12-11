@@ -199,10 +199,10 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 * [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
 
   - Input:
-    
+    The inputs for this code are four .npy files. Two of the .npy files are the means and standard deviation for electrostatic forces. The other two .npy files are the means and standard deviation for hydrophobic forces.
 
   - Output:
-    
+    The outputs for this code are two .png files and two .svg files. The first .png and .svg files are the sum of the forces plots for the electrostatic forces, whereas the second .png and .svg files are the sum of the forces plots for the hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
