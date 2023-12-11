@@ -81,6 +81,15 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
   This code was last run without errors with the following library versions:
 
+* [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
+
+  - Input:
+   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code.
+
+  - Output:
+    The output is a single .gsd file, containing the position and identifier for each amino acid sitting in the simulation box for all time steps of the input simulation, as well as all additional timesteps completed from the continued simulation.
+    
+
 * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants where the well depth of the Lennard-Jones potential was NOT changed as a function of salt concentration. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that a salt dependant well-depth was necessary to generate phase separation diagrams that qualitatively match experimentally determined phase separation diagrams.
 
