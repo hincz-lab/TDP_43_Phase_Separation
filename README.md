@@ -142,6 +142,15 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+* [5x Protein Create Trajectory Gifs](/Analysis/5x_Protein_Create_Trajectory_Gifs/)
+  
+  - Input:
+    A .npy file containing the positions of each AA for all extracted timesteps of the simulation.
+
+  - Output:
+    A .gif file, which shows the projection of each AA in the simulation box for all timesteps extracted from the simulation.
+
+  This code was last run without errors with the following library versions:
 
 
 
