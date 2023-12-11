@@ -13,13 +13,13 @@ The aim of this project was to explore the biphasic nature of TDP-43 LCD phospho
 
 The most recent stable versions of libraries/packages which can be used to run [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/), [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/), [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/), and [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/) are:
 
-Python 3.9.6
-GCC 11.2.0
-Pandas 1.3.4
-Numpy 1.21.3
-Hoomd-Blue 2.9.7
-Azplugins 0.12.0
-GSD 2.7.0
+- Python 3.9.6
+- GCC 11.2.0
+- Pandas 1.3.4
+- Numpy 1.21.3
+- Hoomd-Blue 2.9.7
+- Azplugins 0.12.0
+- GSD 2.7.0
 
 But stable versions of libraries and packages which can be used to successfully run bits of code will be listed individually for each chunk of code. 
 
