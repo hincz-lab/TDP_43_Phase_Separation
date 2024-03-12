@@ -9,7 +9,8 @@
 
 ## Introduction
 
-Hello and welcome to the github repository for the paper [] by Haider, Shipley, et al. This repository will house a complete collection of all of the code used to generate computational data and results for the paper. Note, however, that this repository will only contain representative inputs and outputs. For access to the complete dataset, please navigate to our osf repository here[], which contains none of the code, but all of the inputs and outputs for this project. 
+Hello and welcome to the github repository for the paper Pathological C-terminal phosphomimetic substitutions alter the mechanism of liquid-liquid
+phase separation of TDP-43 low complexity domain by Haider, Shipley, et al. This repository will house a complete collection of all of the code used to generate computational data and results for the paper. Note, however, that this repository will only contain representative inputs and outputs. For access to the complete dataset, please contact Brandon Shipley at bes82@case.edu.
 
 The aim of this project was to explore the biphasic nature of TDP-43 LCD phosphomimetic variant phase separation diagrams relative to the non-biphasic TDP-43 LCD WT phase separation diagram. To probe the types of interactions that drive this behavior, a coarse grained simulation framework was developed to simulate these TDP-43 systems. These simulations are the concern of this repository, and the code can largely be broken into two chunks. The first set of code/data is classified as [Simulation](/Simulation/), which is concerned with generating, running, and extracting results of simulation. The second set of code/data is classified as [Analysis](/Analysis/), which is concerned with analyzing the results of the simulations. All code for this project was generated in Python using .ipynb Jupyter notebooks. 
 
