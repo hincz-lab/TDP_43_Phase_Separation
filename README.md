@@ -75,7 +75,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-* CHECK THIS AFTER COMPLETION OF 5X [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
+* [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants with 5x the number of proteins used in the paper main-text results. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that our choice of using an intentionally small number of proteins was justifiable, insofar as using a larger number of proteins would not qualitatively change the results of the simulations.
 
   - Input:
@@ -108,7 +108,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-* CHECK THIS AFTER COMPLETION OF 5X [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
+* [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
 
   - Input:
    A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
