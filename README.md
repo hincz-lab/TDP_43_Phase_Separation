@@ -24,7 +24,7 @@ The most recent stable versions of libraries/packages which can be used to run t
 - Azplugins 0.12.0
 - GSD 2.7.0
 
-The most recent stable versions of libraries/packages which can be used to run the sanalysis code are:
+The most recent stable versions of libraries/packages which can be used to run the analysis code are:
 
 - Python 3.9.17
 - Numpy 1.25.0
