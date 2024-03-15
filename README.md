@@ -1,7 +1,5 @@
 # TDP 43 Phase Separation
 
-***This Github page is still being finalized, and will be soon.***
-
 ## Table Of Contents
 1. [Introduction](#introduction)
 2. [Simulation Code Navigation](#simulation-code-navigation)
