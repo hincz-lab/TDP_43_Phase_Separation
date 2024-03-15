@@ -189,7 +189,11 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* CHECK THIS AFTER COMPLETION OF 5X [5x Protein Create Trajectory Gifs](/Analysis/5x_Protein_Create_Trajectory_Gifs/)
+  - Numpy 1.25.0
+  - Matplotlib 3.7.1
+  - PIL 9.4.0
+
+* [5x Protein Create Trajectory Gifs](/Analysis/5x_Protein_Create_Trajectory_Gifs/)
   
   - Input:
     A .npy file containing the positions of each AA for all extracted timesteps of the simulation.
@@ -199,8 +203,9 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-
-
+  - Numpy 1.25.0
+  - Matplotlib 3.7.1
+  - PIL 9.4.0
 
 * CHECK THIS AFTER COMPLETION OF 5X [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
   The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
