@@ -121,7 +121,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 * [TDP 43 LCD 5x_Protein Simulation Continuation](/Simulation/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
 
   - Input:
-   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
+   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Simulation/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
 
   - Output:
     The output is a single .gsd file, containing the position and identifier for each amino acid sitting in the simulation box for all time steps of the input simulation, as well as all additional timesteps completed from the continued simulation.
