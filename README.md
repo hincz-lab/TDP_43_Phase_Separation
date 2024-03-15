@@ -38,7 +38,7 @@ But stable versions of libraries and packages which can be used to successfully 
 
 ## Simulation Code Navigation
 
-When you enter the [Simulation](/Simulation/) directory, you will notice many sub-directories. These sub-directories will each contain three items, an input directory, an output directory, and a .ipynb notebook. 
+When you enter the [Simulation](/Simulation/) directory, you will notice many sub-directories. These sub-directories will each contain a .ipynb notebook, which is the code used for that particular part of the project. 
 
 * [Extract Protein AA Chain](/Simulation/Extract_Protein_AA_Chain/)
   This first sub-directory contains a helper code which can convert the amino acid chain which comprises a protein to the correct format for use in the simulation code. Specifically, this code will convert a .txt file of the amino acid chain into a .csv format, where the chain is placed along one column, and each row represents a sequential amino acid in the chain.
