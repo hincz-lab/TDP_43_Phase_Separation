@@ -208,7 +208,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Matplotlib 3.7.1
   - PIL 9.4.0
 
-* CHECK THIS AFTER COMPLETION OF 5X [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
+* [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
   The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
 
   - Input:
@@ -216,30 +216,61 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Output:
     A .avi video file, which is the exact same content as the input .gif, but which can now be panned through.
 
-* CHECK THIS AFTER COMPLETION OF 5X [Extract AA TA_Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
+  This code was last run without errors with the following library versions:
+
+  - ffmpy 0.3.0
+
+* [Extract AA TA_Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
   To complete our force analysis, we need to calculate the time averaged (TA) pairwise force (Electrostatic & Hydrophobic) for all pairs of AAs in the simulation box.
 
   - Input:
-    The input for this code are two .npy files and one .csv file. One of the .npy files contains the positions of each AA in the simulation box for all timesteps, whereas the second .npy file contains the AA labels for each of the particles in the simulation box for all timesteps. Finally, the .csv file contains the coarse grained properties of each AA type.
-    
-
+    The input for this code are two .npy files and one .csv file. One of the .npy files contains the positions of each AA in the simulation box for all timesteps, whereas the second .npy file contains the AA labels for       each of the particles in the simulation box for all timesteps. Finally, the .csv file contains the coarse grained properties of each AA type.
   - Output:
     The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
-* CHECK THIS AFTER COMPLETION OF 5X [Calculate Force_Sums](/Analysis/Calculate_Force_Sums/)
+  - Numpy 1.25.0
+  - Pandas 1.5.3
+
+* [5x_Protein_Extract AA TA_Pairwise Forces](/Analysis/5x_Protein_Extract_AA_TA_Pairwise_Forces/)
+  To complete our force analysis, we need to calculate the time averaged (TA) pairwise force (Electrostatic & Hydrophobic) for all pairs of AAs in the simulation box. This variant of the code completes the process for the 5x protein simulations.
+
+  - Input:
+    The input for this code are two .npy files and one .csv file. One of the .npy files contains the positions of each AA in the simulation box for all timesteps, whereas the second .npy file contains the AA labels for       each of the particles in the simulation box for all timesteps. Finally, the .csv file contains the coarse grained properties of each AA type.
+  - Output:
+    The output of the code are two .npy files. One contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
+
+  This code was last run without errors with the following library versions:
+
+  - Numpy 1.25.0
+  - Pandas 1.5.3
+
+* [Calculate Force_Sums](/Analysis/Calculate_Force_Sums/)
   Once we have extracted the TA electrostatic and hydrophobic forces, we now want to compare the relative magnitude of the sum of the electrostatic and hydrophobic forces. To calculate this quantity with an errorbar, we will use a block-bootstrapping procedure. These forces will allow us to comment on the relative importance of both forces in sustaining phase separation.
   - Input:
     The inputs for this code are two .npy files. One .npy file contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
-    
-
   - Output:
     The outputs for this code are four .npy files. For both electrostatic forces and hydrophobic forces, the mean and standard deviation of the force sums are reported.
 
   This code was last run without errors with the following library versions:
 
-* CHECK THIS AFTER COMPLETION OF 5X [Calculate Residue Forces](/Analysis/Calculate_Residue_Forces/)
+  - Numpy 1.25.0
+  - Pandas 1.5.3
+
+* [5x_Protein_Calculate Force_Sums](/Analysis/5x_Protein_Calculate_Force_Sums/)
+  Once we have extracted the TA electrostatic and hydrophobic forces, we now want to compare the relative magnitude of the sum of the electrostatic and hydrophobic forces. To calculate this quantity with an errorbar, we will use a block-bootstrapping procedure. These forces will allow us to comment on the relative importance of both forces in sustaining phase separation.
+  - Input:
+    The inputs for this code are two .npy files. One .npy file contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
+  - Output:
+    The outputs for this code are four .npy files. For both electrostatic forces and hydrophobic forces, the mean and standard deviation of the force sums are reported.
+
+  This code was last run without errors with the following library versions:
+
+  - Numpy 1.25.0
+  - Pandas 1.5.3
+
+* [Calculate Residue Forces](/Analysis/Calculate_Residue_Forces/)
   We can get a finer level of detail as far as how the TA inter-protein forces are distributed by disjointing the total force sums into components based upon locations of two interacting AAs in their respective proteins.
   - Input:
     The inputs for this code are two .npy files, one containing the TA electrostatic forces, and one containing the TA hydrophobic forces.
@@ -249,7 +280,9 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* CHECK THIS AFTER COMPLETION OF 5X [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
+  - Numpy 1.25.0
+
+* [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
 
   - Input:
     The inputs for this code are four .npy files. Two of the .npy files are the means and standard deviation for electrostatic forces. The other two .npy files are the means and standard deviation for hydrophobic forces.
@@ -259,7 +292,11 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-* CHECK THIS AFTER COMPLETION OF 5X [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
+  - Numpy 1.25.0
+  - Matplotlib 3.7.1
+  - Pandas 1.5.3
+
+* [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
 
   - Input:
     The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
@@ -268,5 +305,8 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
     The output for this code are two .png files and two .svg files. One pair of .png and .svg files contain the residue-residue electrostatic forces, whereas the second pair contain the residue-residue hydrophobic forces. 
 
   This code was last run without errors with the following library versions:
+
+  - Numpy 1.25.0
+  - Matplotlib 3.7.1
 
 
