@@ -52,7 +52,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - Pandas 1.5.3
   - Python 3.9.17
 
-* [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/)
+* [TDP 43 LCD Simulation Base](/Simulation/TDP_43_LCD_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and it phosphomimimeic variants. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids.
 
   - Input:
