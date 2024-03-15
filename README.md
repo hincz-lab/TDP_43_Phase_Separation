@@ -4,17 +4,17 @@
 
 ## Table Of Contents
 1. [Introduction](#introduction)
-2. [Simulation Code/Data Navigation](#simulation-codedata-navigation)
-3. [Analysis Code/Data Navigation](#analysis-codedata-navigation)
+2. [Simulation Code Navigation](#simulation-code-navigation)
+3. [Analysis Code Navigation](#analysis-code-navigation)
 
 ## Introduction
 
 Hello and welcome to the github repository for the paper Pathological C-terminal phosphomimetic substitutions alter the mechanism of liquid-liquid
-phase separation of TDP-43 low complexity domain by Haider, Shipley, et al. This repository will house a complete collection of all of the code used to generate computational data and results for the paper. Note, however, that this repository will only contain representative inputs and outputs. For access to the complete dataset, please contact Brandon Shipley at bes82@case.edu.
+phase separation of TDP-43 low complexity domain by Haider, Shipley, et al. This repository will house a complete collection of all of the code used to generate computational data and results for the paper. Note, however, that this repository will not contain the data used for the paper because the total dataset is on the order of ~100GB. For access to the partial or complete dataset, please contact Brandon Shipley at bes82@case.edu.
 
-The aim of this project was to explore the biphasic nature of TDP-43 LCD phosphomimetic variant phase separation diagrams relative to the non-biphasic TDP-43 LCD WT phase separation diagram. To probe the types of interactions that drive this behavior, a coarse grained simulation framework was developed to simulate these TDP-43 systems. These simulations are the concern of this repository, and the code can largely be broken into two chunks. The first set of code/data is classified as [Simulation](/Simulation/), which is concerned with generating, running, and extracting results of simulation. The second set of code/data is classified as [Analysis](/Analysis/), which is concerned with analyzing the results of the simulations. All code for this project was generated in Python using .ipynb Jupyter notebooks. 
+The aim of this project was to explore the biphasic nature of TDP-43 LCD phosphomimetic variant phase separation diagrams relative to the non-biphasic TDP-43 LCD WT phase separation diagram. To probe the types of interactions that drive this behavior, a coarse grained simulation framework was developed to simulate these TDP-43 systems. These simulations are the concern of this repository, and the code can largely be broken into two chunks. The first set of code is classified as [Simulation](/Simulation/), which is concerned with generating, running, and extracting results of simulation. The second set of code is classified as [Analysis](/Analysis/), which is concerned with analyzing the results of the simulations. All code for this project was generated in Python using .ipynb Jupyter notebooks. 
 
-The most recent stable versions of libraries/packages which can be used to run [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/), [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/), [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/), and [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/) are:
+The most recent stable versions of libraries/packages which can be used to run the simulation code are:
 
 - Python 3.9.6
 - GCC 11.2.0
@@ -24,11 +24,21 @@ The most recent stable versions of libraries/packages which can be used to run [
 - Azplugins 0.12.0
 - GSD 2.7.0
 
+The most recent stable versions of libraries/packages which can be used to run the analysis code are:
+
+- Python 3.9.17
+- Numpy 1.25.0
+- GSD 3.0.1
+- Matplotlib 3.7.1
+- PIL 9.4.0
+- ffmpy 0.3.0
+- Pandas 1.5.3
+
 But stable versions of libraries and packages which can be used to successfully run bits of code will be listed individually for each chunk of code. 
 
-## Simulation Code/Data Navigation
+## Simulation Code Navigation
 
-When you enter the [Simulation](/Simulation/) directory, you will notice many sub-directories. These sub-directories will each contain three items, an input directory, an output directory, and a .ipynb notebook. 
+When you enter the [Simulation](/Simulation/) directory, you will notice many sub-directories. These sub-directories will each contain a .ipynb notebook, which is the code used for that particular part of the project. 
 
 * [Extract Protein AA Chain](/Simulation/Extract_Protein_AA_Chain/)
   This first sub-directory contains a helper code which can convert the amino acid chain which comprises a protein to the correct format for use in the simulation code. Specifically, this code will convert a .txt file of the amino acid chain into a .csv format, where the chain is placed along one column, and each row represents a sequential amino acid in the chain.
@@ -161,7 +171,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-## Analysis Code/Data Navigation
+## Analysis Code Navigation
 
 When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
 * [Extract Trajectory Positions And Labels](/Analysis/Extract_Trajectory_Positions_And_Labels/)
@@ -175,6 +185,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - GSD 3.0.1
 
@@ -189,6 +200,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Matplotlib 3.7.1
   - PIL 9.4.0
@@ -204,6 +216,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Matplotlib 3.7.1
   - PIL 9.4.0
@@ -218,6 +231,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - ffmpy 0.3.0
 
 * [Extract AA TA_Pairwise Forces](/Analysis/Extract_AA_TA_Pairwise_Forces/)
@@ -230,6 +244,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Pandas 1.5.3
 
@@ -243,6 +258,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Pandas 1.5.3
 
@@ -255,6 +271,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Pandas 1.5.3
 
@@ -267,6 +284,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Pandas 1.5.3
 
@@ -280,6 +298,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
 
 * [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
@@ -292,6 +311,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Matplotlib 3.7.1
   - Pandas 1.5.3
@@ -306,6 +326,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
+  - Python 3.9.17
   - Numpy 1.25.0
   - Matplotlib 3.7.1
 
