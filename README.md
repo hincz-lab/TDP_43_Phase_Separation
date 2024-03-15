@@ -316,7 +316,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Pandas 1.5.3
 
 * [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
-  To visualize the locations at which inter-protein interactions were most likely to occur, we then created plots of the TA electrostatic and hydrophobic strengths for all AA pairs.
+  To visualize the locations at which inter-protein interactions were most likely to occur, we then created plots of the TA electrostatic and hydrophobic forces for all residue-residue pairs.
 
   - Input:
     The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
