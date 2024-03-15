@@ -136,8 +136,6 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - Azplugins 0.12.0
   - GSD 2.7.0
 
-    
-
 * [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Simulation/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants where the well depth of the Lennard-Jones potential was NOT changed as a function of salt concentration. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that a salt dependant well-depth was necessary to generate phase separation diagrams that qualitatively match experimentally determined phase separation diagrams.
 
@@ -173,7 +171,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
 ## Analysis Code Navigation
 
-When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
+When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
 * [Extract Trajectory Positions And Labels](/Analysis/Extract_Trajectory_Positions_And_Labels/)
   The first step in analyzing our simulation results will be to extract the position and label of every amino acid (AA) from the simulation at every time step interval. The Hoomd-Blue toolkit reports the position and particle label of each amino acid in a .gsd file, which we would like to repurpose into numpy .npy array files, one for the positions of each amino acid, and one for the particle labels of each amino acid.
 
