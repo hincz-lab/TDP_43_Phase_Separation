@@ -300,6 +300,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Numpy 1.25.0
 
 * [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
+  To visualise the relative importance of electrostatic and hydrophobic forces in maintaining phase separation, we now will plot the total TA electrostatic and hydrophobic force for all inter-preotein interactions as a function of salt concentration.
 
   - Input:
     The inputs for this code are four .npy files. Two of the .npy files are the means and standard deviation for electrostatic forces. The other two .npy files are the means and standard deviation for hydrophobic forces.
@@ -315,6 +316,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Pandas 1.5.3
 
 * [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
+  To visualize the locations at which inter-protein interactions were most likely to occur, we then created plots of the TA electrostatic and hydrophobic strengths for all AA pairs.
 
   - Input:
     The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
