@@ -194,6 +194,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - PIL 9.4.0
 
 * [5x Protein Create Trajectory Gifs](/Analysis/5x_Protein_Create_Trajectory_Gifs/)
+  In this variant of the create trajectory gifs code, we visualize how the simulated system behaves over time, while accounting for the larger simulation slab used for 5x proteins. We convert all of the AA position data into a .gif. The .gif file shows the projection of each amino acid along one face of the simulation slab for each time step.
   
   - Input:
     A .npy file containing the positions of each AA for all extracted timesteps of the simulation.
