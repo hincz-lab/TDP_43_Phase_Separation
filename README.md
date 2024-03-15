@@ -4,8 +4,8 @@
 
 ## Table Of Contents
 1. [Introduction](#introduction)
-2. [Simulation Code/Data Navigation](#simulation-codedata-navigation)
-3. [Analysis Code/Data Navigation](#analysis-codedata-navigation)
+2. [Simulation Code Navigation](#simulation-code-navigation)
+3. [Analysis Code Navigation](#analysis-code-navigation)
 
 ## Introduction
 
@@ -26,7 +26,7 @@ The most recent stable versions of libraries/packages which can be used to run [
 
 But stable versions of libraries and packages which can be used to successfully run bits of code will be listed individually for each chunk of code. 
 
-## Simulation Code/Data Navigation
+## Simulation Code Navigation
 
 When you enter the [Simulation](/Simulation/) directory, you will notice many sub-directories. These sub-directories will each contain three items, an input directory, an output directory, and a .ipynb notebook. 
 
@@ -161,7 +161,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-## Analysis Code/Data Navigation
+## Analysis Code Navigation
 
 When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
 * [Extract Trajectory Positions And Labels](/Analysis/Extract_Trajectory_Positions_And_Labels/)
