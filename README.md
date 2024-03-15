@@ -164,7 +164,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 ## Analysis Code/Data Navigation
 
 When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
-* CHECK THIS AFTER COMPLETION OF 5X [Extract AA Positions And Labels](/Analysis/Extract_AA_Positions_And_Labels/)
+* [Extract Trajectory Positions And Labels](/Analysis/Extract_Trajectory_Positions_And_Labels/)
   The first step in analyzing our simulation results will be to extract the position and label of every amino acid (AA) from the simulation at every time step interval. The Hoomd-Blue toolkit reports the position and particle label of each amino acid in a .gsd file, which we would like to repurpose into numpy .npy array files, one for the positions of each amino acid, and one for the particle labels of each amino acid.
 
   - Input:
@@ -175,8 +175,8 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
 
   This code was last run without errors with the following library versions:
 
-
-
+  - Numpy 1.25.0
+  - GSD 3.0.1
 
 * [Create Trajectory Gifs](/Analysis/Create_Trajectory_Gifs/)
   Once we have extracted all of the amino acid positions, we can then visualize how the system behaves over time. In this step, we convert all of the AA position data into a .gif. The .gif file shows the projection of each amino acid along one face of the simulation slab for each time step.
