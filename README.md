@@ -52,7 +52,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - Pandas 1.5.3
   - Python 3.9.17
 
-* [TDP 43 LCD Simulation Base](/Analysis/TDP_43_LCD_Simulation_Base/)
+* [TDP 43 LCD Simulation Base](/Simulation/TDP_43_LCD_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and it phosphomimimeic variants. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids.
 
   - Input:
@@ -85,7 +85,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-* [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/)
+* [TDP 43 LCD 5x_Protein_Simulation Base](/Simulation/TDP_43_LCD_5x_Protein_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants with 5x the number of proteins used in the paper main-text results. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that our choice of using an intentionally small number of proteins was justifiable, insofar as using a larger number of proteins would not qualitatively change the results of the simulations.
 
   - Input:
@@ -118,10 +118,10 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - GSD 2.7.0
 
 
-* [TDP 43 LCD 5x_Protein Simulation Continuation](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
+* [TDP 43 LCD 5x_Protein Simulation Continuation](/Simulation/TDP_43_LCD_5x_Protein_Simulation_Continuation/)
 
   - Input:
-   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Analysis/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
+   A .csv file, which contains all of the coarse-grained properties of the amino acids, as well as a .gsd file, containing the partially completed simulation. The output from the [TDP 43 LCD 5x_Protein_Simulation Base](/Simulation/TDP_43_LCD_5x_Protein_Simulation_Base/) section will suffice as an input for this code. Note that the input .gsd file needs to be placed inside the input AND output directory in this case.
 
   - Output:
     The output is a single .gsd file, containing the position and identifier for each amino acid sitting in the simulation box for all time steps of the input simulation, as well as all additional timesteps completed from the continued simulation.
@@ -136,9 +136,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
   - Azplugins 0.12.0
   - GSD 2.7.0
 
-    
-
-* [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Analysis/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
+* [TDP 43 LCD Constant_Hydrophobics_Simulation Base](/Simulation/TDP_43_LCD_Constant_Hydrophobics_Simulation_Base/)
   This sub-directory contains code which can be used as a base for running simulations of TDP-43-LCD wild type and its phosphomimetic variants where the well depth of the Lennard-Jones potential was NOT changed as a function of salt concentration. The input for this code is a TDP-43 protein chain .csv file, and a .csv file containing the coarse grained parameters of the amino acids. This code was used to show that a salt dependant well-depth was necessary to generate phase separation diagrams that qualitatively match experimentally determined phase separation diagrams.
 
   - Input:
@@ -173,7 +171,7 @@ When you enter the [Simulation](/Simulation/) directory, you will notice many su
 
 ## Analysis Code Navigation
 
-When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code/data to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
+When you enter the [Analysis](/Analysis/) directory, you will notice many sub-directories. The goal here is to segment each distinct step in the analysis process into separate chunks of code to make the process accessible to an individual interested in recapitulating any part of the analysis. The code in this sub-directory are oriented towards extracting meaningful data from the simulations.
 * [Extract Trajectory Positions And Labels](/Analysis/Extract_Trajectory_Positions_And_Labels/)
   The first step in analyzing our simulation results will be to extract the position and label of every amino acid (AA) from the simulation at every time step interval. The Hoomd-Blue toolkit reports the position and particle label of each amino acid in a .gsd file, which we would like to repurpose into numpy .npy array files, one for the positions of each amino acid, and one for the particle labels of each amino acid.
 
@@ -222,7 +220,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - PIL 9.4.0
 
 * [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
-  The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
+  This code can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
 
   - Input:
     A .gif file, showing each AA in the simulation box projected onto one of the simulation slab faces at each time step in a simulation.
@@ -276,11 +274,11 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Pandas 1.5.3
 
 * [5x_Protein_Calculate Force_Sums](/Analysis/5x_Protein_Calculate_Force_Sums/)
-  Once we have extracted the TA electrostatic and hydrophobic forces, we now want to compare the relative magnitude of the sum of the electrostatic and hydrophobic forces. To calculate this quantity with an errorbar, we will use a block-bootstrapping procedure. These forces will allow us to comment on the relative importance of both forces in sustaining phase separation.
+  Once we have extracted the TA electrostatic and hydrophobic forces, we now want to compare the relative magnitude of the sum of the electrostatic and hydrophobic forces. These forces will allow us to comment on the relative importance of both forces in sustaining phase separation.
   - Input:
     The inputs for this code are two .npy files. One .npy file contains the TA pairwise electrostatic forces, whereas the other contains the TA pairwise hydrophobic forces.
   - Output:
-    The outputs for this code are four .npy files. For both electrostatic forces and hydrophobic forces, the mean and standard deviation of the force sums are reported.
+    The outputs for this code are two .npy files. One for both electrostatic forces and hydrophobic forces.
 
   This code was last run without errors with the following library versions:
 
@@ -302,6 +300,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Numpy 1.25.0
 
 * [Plot Force_Sums](/Analysis/Plot_Force_Sums/)
+  To visualise the relative importance of electrostatic and hydrophobic forces in maintaining phase separation, we now will plot the total TA electrostatic and hydrophobic force for all inter-preotein interactions as a function of salt concentration.
 
   - Input:
     The inputs for this code are four .npy files. Two of the .npy files are the means and standard deviation for electrostatic forces. The other two .npy files are the means and standard deviation for hydrophobic forces.
@@ -317,6 +316,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - Pandas 1.5.3
 
 * [Plot Residue Forces](/Analysis/Plot_Residue_Forces/)
+  To visualize the locations at which inter-protein interactions were most likely to occur, we then created plots of the TA electrostatic and hydrophobic forces for all residue-residue pairs.
 
   - Input:
     The input for this code is two .npy files, one containing the TA electrostatic forces, and the other containing the TA hydrophobic forces.
