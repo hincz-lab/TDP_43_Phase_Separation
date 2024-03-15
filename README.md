@@ -220,7 +220,7 @@ When you enter the [Analysis](/Analysis/) directory, you will notice many sub-di
   - PIL 9.4.0
 
 * [Convert Trajectory Gifs To Video](/Analysis/Convert_Trajectory_Gifs_To_Video/)
-  The code located in this sub-sub-drectory can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
+  This code can be used to convert the previously generated trajectory .gif files into a trajectory .avi videos. The benefit of this process is that the time of the video can be panned through, allowing the user to look at particular timesteps in more detail.
 
   - Input:
     A .gif file, showing each AA in the simulation box projected onto one of the simulation slab faces at each time step in a simulation.
